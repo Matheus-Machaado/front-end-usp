@@ -1,51 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --cor-fundo: #1c1c1e;
     --cor-card: #2c2c2e;
-    --cor-text-claro: #f6f6f6;
-    --cor-text-secundaria: #a0a0a0a0;
+    --cor-texto-claro: #ffffff;
+    --cor-secundaria: #a0a0a0;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-}
-
-html {
-    font-size: 62.5%;
 }
 
 body {
+    font-family: 'Inter', sans-serif;
     background-color: var(--cor-fundo);
-    color: var(--cor-text-claro);
+    color: var(--cor-texto-claro);
     line-height: 1.6;
-    padding-top: 4rem;
+    padding-top: 60px;
     min-height: 100vh;
 }
 
 a {
-    color: var(--cor-text-secundaria);
+    color: var(--cor-secundaria);
     text-decoration: none;
-    transition: color .2s ease-in-out;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: var(--cor-text-claro);
+    color: var(--cor-texto-claro);
 }
 
-header {
+.cabecalho {
+    background-color: var(--cor-card);
+    padding: 2rem;
+    border-bottom: 1px solid var(--cor-texto-claro);
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
     width: 100%;
-    background-color: var(--cor-card);
-    border-bottom: 1px solid var(--cor-text-claro);
-    padding: 2rem;
 }
 
-.header-content {
+.cabecalho-conteudo {
     max-width: 120rem;
     margin: 0 auto;
     display: flex;
@@ -53,13 +50,142 @@ header {
     align-items: center;
 }
 
-.header-content h1 {
-    font-size: 3rem;
+.logo h1 {
+    font-size: 1.2rem;
+    color: var(--cor-texto-claro);
+    font-weight: 500;
 }
 
-.nav-header ul {
+.navegacao ul {
     list-style: none;
     display: flex;
     gap: 2rem;
-    font-size: 2rem;
+}
+
+.navegacao a {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--cor-texto-claro);
+    padding: 5px 0;
+    opacity: 0.6;
+}
+
+.navegacao a:hover {
+    opacity: 0.8;
+    color: var(--cor-texto-claro);
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 80%;
+    margin: 1rem auto;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+}
+
+.secao-destaque {
+    grid-column: 1 / -1;
+    padding: 4rem 1rem;
+    margin: 2rem 0;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 12px;
+    border: none;
+    box-shadow: none;
+}
+
+.secao-destaque h2 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.secao-destaque p {
+    color: var(--cor-secundaria);
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0.5rem auto 1.5rem;
+}
+
+.secao-destaque .leia-mais {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--cor-texto-claro);
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--cor-secundaria);
+}
+
+.secao-destaque .leia-mais:hover {
+    color: var(--cor-secundaria);
+}
+
+.secao-noticias h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.grid-noticias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.noticia-card {
+    background-color: var(--cor-card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px var(--cor-fundo);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.noticia-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px var(--cor-fundo);
+}
+
+.noticia-card h3 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--cor-texto-claro);
+    line-height: 1.3;
+}
+
+.noticia-card .meta {
+    font-size: 0.85rem;
+    color: var(--cor-secundaria);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.noticia-card p {
+    font-size: 0.95rem;
+    color: var(--cor-secundaria);
+}
+
+.rodape {
+    background-color: var(--cor-fundo);
+    color: var(--cor-secundaria);
+    text-align: center;
+    padding: 3rem 1.5rem;
+    margin-top: 4rem;
+    border-top: 1px solid var(--cor-card);
+}
+
+.rodape .navegacao-secundaria a {
+    color: var(--cor-texto-claro);
+    margin: 0 10px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.rodape .navegacao-secundaria {
+    margin-bottom: 1rem;
 }

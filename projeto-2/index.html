@@ -1,35 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>MBA News - Tech</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1>MBA News - Tech</h1>
-            <nav class="nav-header">
+    
+    <header class="cabecalho">
+        <div class="cabecalho-conteudo">
+            <div class="logo">
+                <h1>MBA - TECHNEWS</h1>
+            </div>
+            <nav class="navegacao">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="">Desenvolvimento</a></li>
-                    <li><a href="">Hardware</a></li>
-                    <li><a href="">IA</a></li>
-                    <li><a href="">Contatos</a></li>
-                    <li><a href="">Sobre nos</a></li>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Desenvolvimento</a></li>
+                    <li><a href="#">Hardware</a></li>
+                    <li><a href="#">IA</a></li>
+                    <li><a href="#">Suporte</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <footer>
-        <div class="footer-content">
-            nav
+    <main class="container">
+        
+        <section class="secao-destaque" aria-labelledby="featured-heading">
+            <h2 id="featured-heading">O Futuro é Agora. Conheça o M4: Chip de Alto Desempenho para Desenvolvedores.</h2>
+            <p>Com poder de processamento neural sem precedentes e eficiência energética, o novo chip da próxima geração redefine o limite da computação pessoal.</p>
+            <a href="#" class="leia-mais">Veja em Detalhes &rarr;</a>
+        </section>
+
+        <section class="secao-noticias" aria-labelledby="recent-news-heading">
+            <h2 id="recent-news-heading">Notícias de Última Hora</h2>
+            <div class="grid-noticias">
+                <article class="noticia-card">
+                    <h3>Frontend 2025: O Fim do Bundling?</h3>
+                    <span class="meta">Por Jane Doe | 14 de Outubro, 2025</span>
+                    <p>Com o avanço dos módulos ES nativos e ferramentas como Vite, a necessidade de empacotamento complexo no frontend está diminuindo.</p>
+                </article>
+
+                <article class="noticia-card">
+                    <h3>Deno e Fresh Framework: A Nova Cara do Backend</h3>
+                    <span class="meta">Por John Smith | 13 de Outubro, 2025</span>
+                    <p>O runtime Deno e seu framework Fresh estão mudando o desenvolvimento web com foco em segurança e desempenho. Entenda essa revolução.</p>
+                </article>
+
+                <article class="noticia-card">
+                    <h3>Guia Prático de CSS Grid para Iniciantes</h3>
+                    <span class="meta">Por Alex Cruz | 12 de Outubro, 2025</span>
+                    <p>Aprenda de forma simples a construir layouts complexos com poucas linhas de código usando o poderoso sistema de grade do CSS.</p>
+                </article>
+
+                <article class="noticia-card">
+                    <h3>O Desafio de Segurança em Frameworks Low-Code</h3>
+                    <span class="meta">Por Maria Souza | 11 de Outubro, 2025</span>
+                    <p>Plataformas Low-Code aumentam a velocidade. Como garantir a segurança e a manutenção do código gerado a longo prazo?</p>
+                </article>
+
+                <article class="noticia-card">
+                    <h3>Melhores Práticas de Acessibilidade em Single Page Applications (SPAs)</h3>
+                    <span class="meta">Por Sofia Nunes | 09 de Outubro, 2025</span>
+                    <p>Garantir que as SPAs sejam acessíveis exige atenção. Conheça as principais dicas de ARIA e gerenciamento de foco.</p>
+                </article>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="rodape">
+        <div class="navegacao-secundaria">
+            <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a> | <a href="#">Fale Conosco</a>
         </div>
+        <p>Copyright &copy; 2025 MBANews. Todos os direitos reservados.</p>
     </footer>
+
 </body>
-</html> 
+</html>
